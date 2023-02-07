@@ -6,9 +6,10 @@ This tool is for discovering devices on specified IP netowrk using nmap without 
 ### Requirements
 
 * Any linux/*nix system including WSL
-* ruby 3.0 or above
-* nmap 7.80 or above
-* ipaddress-gem/ipaddress 0.8.3 or above
+* ruby 3.0 and above
+* bundler 2.4.5 and above
+* nmap 7.80 and above
+* ipaddress-gem/ipaddress 0.8.3 and above
 
 ### Building
 
