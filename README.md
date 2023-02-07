@@ -1,10 +1,7 @@
 # Device Discovery on IP network without pinging
 
 ### Summary
-このツールはnmapコマンドを利用して、指定したネットワーク上にあるデバイスを検索するためのものです。
-ネットワークを指定したうえで、オプション無しで実行すると、当該ネットワークの中で何らかの応答をする
-IPアドレスを答えます。オプションの指定により、生きているIPアドレスに関する様々な情報を提供できる
-要にする予定です。
+This tool is for discovering devices on specified IP netowrk using nmap without ping. This answers IP addresses if they response something when  network address is specified with no option. In the future, this tool will answer various information related to alive IP addresses.
 
 ### Requirements
 
@@ -23,11 +20,23 @@ $ cd DeviceDiscovery
 $ bundle install
 ```
 
-### Running
+### How to run
 
+```
 Usage: ruby ./device_discovery.rb netowrk-address or IP address
-Example: ruby ./device_discovery.rb 192.168.0.0/24
-Example: ruby ./device_discovery.rb 192.168.100.7
+   ex) ruby ./device_discovery.rb 192.168.0.0/24
+       ruby ./device_discovery.rb 192.168.100.7
+```
+
+### Outputs
+
+```
+$ ruby .device_discovery.rb 192.168.0.0/24
+192.168.0.1 alive.
+192.168.0.15 alive.
+192.168.0.129 alive.
+...
+```
 
 ### Configure
 
