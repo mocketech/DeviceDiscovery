@@ -55,6 +55,7 @@ rescue => e
 end
 
 targetNetwork.each do |addr|
+    p addr
     next if (addr == addr.network || addr == addr.broadcast) && addr.prefix != 32
     
     begin
